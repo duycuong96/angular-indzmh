@@ -26,7 +26,9 @@ export class ProductListComponent implements OnInit {
       product => product.id != id
     )
   }
-
+detailProduct(product){
+    return this.detail =product;
+  }
 
 
 
