@@ -20,10 +20,14 @@
           <button class="btn btn-primary m-3 d-block">Buy now</button>
           <!-- <button (click)="detailProduct(product)">Chi tiet</button> -->
           <div class="card-footer">
-              <button (click)="removeItem(product.id)">Delete</button>
+            <button class="btn btn-primary" (click)="removeItem(product.id)">Xóa</button>
+            <button class="btn btn-primary" (click)="showDetail(product)">Click me!</button>
           </div>
       </div>
   </div>
 
+  <div *ngIf="selected">
+    <app-product [data]="selected"></app-product>
+  </div>
 
 </div>
