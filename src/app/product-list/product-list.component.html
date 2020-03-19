@@ -1,6 +1,29 @@
 <div class="row">
+  <!-- <app-item-product ngClass="col-lg-4 col-md-6 mb-4"></app-item-product>
+  <app-item-product ngClass="col-lg-4 col-md-6 mb-4"></app-item-product>
+  <app-item-product ngClass="col-lg-4 col-md-6 mb-4"></app-item-product> -->
+  <!-- <app-item-product></app-item-product>
+  <app-item-product></app-item-product>  -->
 
-<app-product ngClass="col-lg-4 col-md-6 mb-4" ></app-product>
-<app-product ngClass="col-lg-4 col-md-6 mb-4" ></app-product>
-<app-product ngClass="col-lg-4 col-md-6 mb-4" ></app-product>
+  <div *ngFor="let product of products" class="col-lg-4 col-md-6 mb-4">
+      <div class="card h-100">
+          <a href="#"><img class="card-img-top" [src]="product.image" alt=""></a>
+          <div class="card-body">
+              <h4 class="card-title">
+                  <a href="#">{{product.name}}</a>
+              </h4>
+              <h5>${{product.price}}</h5>
+              <p class="card-text">{{product.desc}}</p>
+              <span>{{product.status ? 'con hang' : 'het hang'}}</span>
+
+          </div>
+          <button class="btn btn-primary m-3 d-block">Buy now</button>
+          <!-- <button (click)="detailProduct(product)">Chi tiet</button> -->
+          <div class="card-footer">
+              <button (click)="removeItem(product.id)">Delete</button>
+          </div>
+      </div>
+  </div>
+
+
 </div>
