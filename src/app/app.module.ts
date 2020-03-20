@@ -12,6 +12,7 @@ import { SlideComponent } from './slide/slide.component';
 
 import { FormsModule } from '@angular/forms';
 import { ProductAddComponent } from './product-add/product-add.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { ProductAddComponent } from './product-add/product-add.component';
     ProductListComponent,
     SlideComponent,
     ProductAddComponent,
+    HomeComponent,
 
   ],
   imports: [
