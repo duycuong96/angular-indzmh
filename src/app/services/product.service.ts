@@ -32,6 +32,7 @@ export class ProductService {
     let fakeObj = {id: 11, ...product};
     this.products.push(fakeObj);
     // console.log(this.products);
+
   }
 
 }
