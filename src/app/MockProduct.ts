@@ -80,5 +80,21 @@ export const data: Product[] =[
     price: 30000,
     desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur",
     status: true,
+  },
+    {
+    id: 11,
+    name: "Item 11",
+    image: "http://placehold.it/700x400",
+    price: 30000,
+    desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur",
+    status: true,
+  },
+    {
+    id: 12,
+    name: "Item 12",
+    image: "http://placehold.it/700x400",
+    price: 30000,
+    desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur",
+    status: true,
   }
 ]

@@ -29,7 +29,15 @@ export class ProductService {
 
   addProduct(product){
 
-    let fakeObj = {id: 11, ...product};
+    let fakeObj = {id: 13, ...product};
+
+    //  let maxId = 0;
+    // this.products.forEach(function(item){
+    //   if(item.id >= maxId){
+    //     maxId = item.id;
+    //   }
+    // }),
+  
     this.products.push(fakeObj);
     // console.log(this.products);
 
