@@ -26,5 +26,10 @@ export class ProductService {
   detailProduct(product){
     return this.selected = product;
   }
-
+addProduct(product){
+    console.log(product);
+    let fakeObj = {id: 6, ...product};
+    this.products.push(fakeObj);
+    console.log(this.products);
+  }
 }
