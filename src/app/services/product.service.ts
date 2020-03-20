@@ -29,9 +29,9 @@ export class ProductService {
 
   addProduct(product){
 
-    let fakeObj = {id: 6, ...product};
+    let fakeObj = {id: 11, ...product};
     this.products.push(fakeObj);
-    console.log(this.products);
+    // console.log(this.products);
   }
 
 }
