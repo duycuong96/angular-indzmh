@@ -8,11 +8,12 @@ import { ProductService } from "../services/product.service";
 })
 export class ProductAddComponent implements OnInit {
   product: Product = new Product();
+
   constructor(
     private productService: ProductService
   ) { }
 
-  ngOnInit(): void {
+  ngOnInit() {
   }
   addProduct(){
     this.productService.addProduct(this.product);
