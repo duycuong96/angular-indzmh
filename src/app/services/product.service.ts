@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { data } from '../MockProduct';
 import { Product } from '../Product';
 
+
 @Injectable({
   providedIn: 'root'
 })
@@ -41,6 +42,15 @@ export class ProductService {
     this.products.push(fakeObj);
     // console.log(this.products);
 
+  }
+
+  getProduct(id: Number){
+    let product = this.products.find(product => product.id === id);
+    if(product){
+      return product;
+    } else {
+      throw Error('Not found');
+    }
   }
 
 }
