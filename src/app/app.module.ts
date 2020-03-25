@@ -15,6 +15,7 @@ import { FormsModule } from '@angular/forms';
 import { ProductAddComponent } from './product-add/product-add.component';
 import { HomeComponent } from './home/home.component';
 import { ProductDetailComponent } from './product-detail/product-detail.component';
+import { ProductEditComponent } from './product-edit/product-edit.component';
 
 @NgModule({
   declarations: [
@@ -28,6 +29,7 @@ import { ProductDetailComponent } from './product-detail/product-detail.componen
     ProductAddComponent,
     HomeComponent,
     ProductDetailComponent,
+    ProductEditComponent,
 
   ],
   imports: [

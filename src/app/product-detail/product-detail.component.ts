@@ -19,12 +19,16 @@ export class ProductDetailComponent implements OnInit {
     this.getProduct();
   }
 
+  // getProduct(){
+  //   this.route.params.subscribe(data => {
+  //     // console.log(data);
+  //     let { id } = data;
+  //     this.product = this.productService.getProducts(id);
+  //   });
+    
+  // }
+
   getProduct(){
-    this.route.params.subscribe(data => {
-      // console.log(data);
-      let { id } = data;
-      this.product = this.productService.getProducts(id);
-    });
     
   }
 
