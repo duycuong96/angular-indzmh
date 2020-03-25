@@ -20,7 +20,7 @@ export class ProductService {
   }
 
   getProduct(id: Number): Observable<Product[]>{
-    return this.http.get<Product[]>(`$(`)
+    return this.http.get<Product[]>(`${this.products}/${id}`);
   }
 
 

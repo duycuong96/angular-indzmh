@@ -29,7 +29,9 @@ export class ProductDetailComponent implements OnInit {
   // }
 
   getProduct(){
-    
+    this.route.params.subscribe(data => {
+      
+    })
   }
 
 }
