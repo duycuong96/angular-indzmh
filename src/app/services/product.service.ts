@@ -17,8 +17,8 @@ export class ProductService {
     private http: HttpClient
   ) { }
 
-  getProducts(): Observable<any>{
-    return this.http.get<any>(this.products);
+  getProducts(): Observable<Product[]>{
+    return this.http.get<Product[]>(this.products);
   }
 
 
