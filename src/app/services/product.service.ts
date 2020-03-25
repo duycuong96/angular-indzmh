@@ -11,8 +11,6 @@ export class ProductService {
   selected: Product;
   products = 'https://5dcf7e2d75f9360014c268b9.mockapi.io/product';
 
-
-
   constructor(
     private http: HttpClient
   ) { }
